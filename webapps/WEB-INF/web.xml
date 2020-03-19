@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>project_4</display-name>
+  <display-name>project_3</display-name>
   <welcome-file-list>
-    <welcome-file>jsp/index.jsp</welcome-file>
+    <welcome-file>/jsp/index.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+		<servlet-name>Main servlet</servlet-name><!-- To collect application specific stats -->
+		<servlet-class>Hello.java</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Main servlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
 </web-app>
